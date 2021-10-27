@@ -6,14 +6,15 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import './navbarstyle.css'
+import AboutUs from "./components/homepage";
+import Users from "./components/users";
 function App() {
   return (
-    <div >
+    <div className="App">
       <Router>
         <div>
           <nav >
-            <ul className="list">
+            <ul className={"list"}>
               <li>
                 <Link to="/">Home</Link>
               </li>
@@ -36,13 +37,13 @@ function App() {
               <div>drgrdddd</div>
             </Route>
             <Route path="/users">
-              <div>d333dd</div>
+             <Users/>
             </Route>
             <Route path="/transfer">
               <div>dshhhhhd</div>
             </Route>
             <Route path="/">
-              <div>dsadd</div>
+             <AboutUs/>
             </Route>
           </Switch>
         </div>
