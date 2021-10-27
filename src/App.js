@@ -7,7 +7,8 @@ import {
   Link
 } from "react-router-dom";
 import AboutUs from "./components/homepage";
-import Users from "./components/users";
+import UsersList from "./components/usersList";
+import AdminTransfer from "./components/admin";
 function App() {
   return (
     <div className="App">
@@ -34,10 +35,10 @@ function App() {
             renders the first one that matches the current URL. */}
           <Switch>
             <Route path="/admin">
-              <div>drgrdddd</div>
+              <AdminTransfer/>
             </Route>
             <Route path="/users">
-             <Users/>
+             <UsersList/>
             </Route>
             <Route path="/transfer">
               <div>dshhhhhd</div>

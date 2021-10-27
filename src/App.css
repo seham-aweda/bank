@@ -7,3 +7,9 @@
   align-items: center;
   list-style: none;
 }
+.btn{
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 8px;
+  padding:5px;
+}
