@@ -1,4 +1,5 @@
 import './App.css';
+
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -9,28 +10,32 @@ import {
 import AboutUs from "./components/homepage";
 import UsersList from "./components/usersList";
 import AdminTransfer from "./components/admin";
+
+
 function App() {
   return (
+    
     <div className="App">
+      
       <Router>
         <div>
           <nav >
             <ul className={"list"}>
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/" >Home</Link>
               </li>
               <li>
-                <Link to="/users">Users</Link>
+                <Link to="/users" >Users</Link>
               </li>
               <li>
-                <Link to="/admin">Admin</Link>
+                <Link to="/admin" >Admin</Link>
               </li>
               <li>
-                <Link to="/transfer">Transfer</Link>
+                <Link to="/transfer" >Transfer</Link>
               </li>
             </ul>
           </nav>
-
+         
           {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
           <Switch>
@@ -41,7 +46,7 @@ function App() {
              <UsersList/>
             </Route>
             <Route path="/transfer">
-              <div>dshhhhhd</div>
+              <div>In progress</div>
             </Route>
             <Route path="/">
              <AboutUs/>
@@ -50,6 +55,7 @@ function App() {
         </div>
       </Router>
     </div>
+    
   );
 }
 

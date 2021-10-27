@@ -66,11 +66,11 @@ const change=(e)=>{
     // console.log(data)
         let chosen=data.find((user)=>{
             // console.log(user)
-            if(e.target.value===user.username)
-            return  user
-
+            if(e.target.value===user.username){
+             return user
+            }
             })
-    setTempUser(chosen)
+   return setTempUser(chosen)
     }
 
 
