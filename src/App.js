@@ -46,7 +46,15 @@ function App() {
              <UsersList/>
             </Route>
             <Route path="/transfer">
-              <div>In progress</div>
+              <div>In progress...<br/> 
+              משתמש יקר <br/>
+לאור הביקוש הדחוף והלחוץ מצד הלקוח  <br/>
+ אנו מתנצלים על חוסר המידע באתר שלנו   <br/>
+ 🙁האתר עדיין בשלבי פיתוח וטרם נגמר  <br/>
+התהליך יסתיים בעוד שנה מעכשיו כי כל הזמן יש דרישות אינסופיות מהלקוח שלנו  <br/>
+🙃מקווים שבשלב מסויים זה יהיה מוכן לשימוש שלך <br/>
+🌺באהבה צוות הפיתוח 
+              </div>
             </Route>
             <Route path="/">
              <AboutUs/>

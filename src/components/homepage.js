@@ -59,7 +59,8 @@ export default function AboutUs(props) {
     }
     return (
         <div className="PowerGirl">
-            <h1>Power Girl Bank</h1>
+            <h1>SFI BANK <br/>💵💰💶</h1>
+            <div className='firstDive'>
             <input className={'btn'} placeholder={'UserName'} type={"text"} value={existsUser} name={'UserName'} required onChange={TakeData} />
             <input className={'btn'} placeholder={'Password'} type={type} value={existsPass} name={'Password'} required onChange={TakeData} />
             {isPass ? <span onClick={EyeFunction}><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
@@ -77,9 +78,12 @@ export default function AboutUs(props) {
                     d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709zm10.296 8.884-12-12 .708-.708 12 12-.708.708z" />
             </svg> </span>
             }<br />
+            </div>
+            <div>
             <input className={"btn"} type="submit" value="LogIn" onClick={LogIn} />
             {/*<div>{? tempMess :}</div>*/}
             <div> {showMess ? tempMess : tempUser ? <ExistsUser data={data} user={tempUser} /> : tempMess}</div>
+            </div>
         </div>
     )
 }

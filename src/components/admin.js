@@ -5,9 +5,7 @@ const AdminTransfer=()=>{
     const [bankData,setBankData]= React.useState([])
     const [idArray ,setIdArray] = React.useState([])
     const [admin ,setAdmin] = React.useState('')
-    const [admin1 ] = React.useState('ITAY')
     const [adminPassword , setAdminPassword] = React.useState("")
-    const [adminPassword1 ] = React.useState("0502727833")
     const [theRealAdmin , settheRealAdmin] = React.useState(false)
     const[count, setCount]=React.useState(0)
     const[promres, setPromres]= React.useState([])
@@ -75,7 +73,7 @@ const dataById = ()=>{
     }
 
 const adminClick = ()=>{
-    if(admin === admin1 && adminPassword === adminPassword1){
+    if(admin === 'ITAY' && adminPassword === '0502727833'){
         settheRealAdmin(true)
     }
     setAdmin('')
@@ -83,14 +81,14 @@ const adminClick = ()=>{
 }
 
     return(
-        <div>
+        <div className='admin'>
             {
   console.log(promres)
               } 
-            <div style={{display:theRealAdmin? 'none' : 'block'}}>
-            <input className={"btn"} type={"text"} value={admin} name={"admin"} onChange={admineinter}/>
-            <input className={"btn"} type={"text"} value={adminPassword} name={"adminPassword"} onChange={admineinter}/>
-            <input type={"button"} value={'Hello Itay'} onClick={adminClick}/>
+            <div style={{display:theRealAdmin? 'none' : 'block'}} >
+            <input className={"btn"} type={"text"} value={admin} name={"admin"} onChange={admineinter} placeholder={'Admin Name'}/>
+            <input className={"btn"} type={"text"} value={adminPassword} name={"adminPassword"} onChange={admineinter} placeholder={'Admin Password'}/>
+            <input type={"button"} value={'Hello Itay'} onClick={adminClick} className={'btn'}/>
             </div>
             <div>{theRealAdmin ? <div>{
                 promres.map(val=>{
@@ -101,8 +99,7 @@ const adminClick = ()=>{
                  <input type={'button'} value={'Transferm Money'}  />
                  <input type={'text'} />
 
-                </div> : 'YOU ARE NOT ITAY'}</div>
-            
+                </div> :<span style={{display:!theRealAdmin? 'block' : 'none'}}> YOU ARE NOT ITAY</span>}</div>
         </div>
     )
 }

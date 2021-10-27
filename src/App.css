@@ -1,6 +1,6 @@
 
 :root {
-  --primary-color: #c72727;
+  --primary-color: #db4141;
   --secondary-color: #f99500;
   --light-color: #f3f3f3;
   --dark-color: #333;
@@ -23,7 +23,14 @@ body {
 .App {
   text-align: center;
 }
-.list{
+.PowerGirl , .admin{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 70vh;
+}
+.list ,.delete{
+  padding: 7px ;
   display:flex;
   justify-content: space-around;
   align-items: center;

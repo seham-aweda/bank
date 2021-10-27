@@ -26,7 +26,7 @@ const DeleteUser= async (id)=>{
             <div> UserName: {user.username}</div>
             <div>PassWord: {user.password}</div>
             <div>IsActive: {user.isActiv?"✔":"✖"}</div>
-            <input className={"btn"} type={"button"} value={"Delete An UnActive User"} onClick={()=>{DeleteUser(user.id)}}/>
+            <input className={"btn delete"} type={"button"} value={"Delete An UnActive User"} onClick={()=>{DeleteUser(user.id)}}/>
             <br/>
 
         </div>
