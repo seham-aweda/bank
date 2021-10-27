@@ -70,7 +70,7 @@ const change=(e)=>{
              return user
             }
             })
-   return setTempUser(chosen)
+    setTempUser(chosen)
     }
 
 

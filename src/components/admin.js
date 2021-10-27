@@ -55,12 +55,11 @@ const dataById = ()=>{
                 setCount(num)
                 copy.id = val.BankUserId
                 copy.amount = num
-                // promres.push(copy)
+                promres.push(copy)
                 console.log(copy)                
             })
             console.log(copy)
         })
-        promres.push(copy)
     })
     
 }
